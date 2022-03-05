@@ -244,7 +244,7 @@ static void gc_timer(struct timer_list *t)
 		}
 
 		lastgood++;
-		
+		printk(KERN_INFO "X: %i - Y:%1",data[1],data[2]);
 		nAX = (int16_t)data[1];
 		nAY = (int16_t)data[2];
 		if ( nAX > (127 - dzone) && nAX < (127 + dzone) ) nAX = 127;
